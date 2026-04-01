@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
+import { Link } from "react-router-dom"
 
 export function Header() {
   return (
@@ -13,9 +14,9 @@ export function Header() {
       </div>
 
       <nav className="hidden md:flex items-center gap-8">
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+        <Link to="/catalog" className="text-sm text-gray-300 hover:text-white transition-colors">
           Каталог
-        </a>
+        </Link>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
           Категории <ChevronDown className="h-4 w-4" />
         </a>
