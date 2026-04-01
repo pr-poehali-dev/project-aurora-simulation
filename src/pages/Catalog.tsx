@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import { Header } from "@/components/Header"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -277,7 +278,7 @@ export default function Catalog() {
 
 function ProductCard({ product }: { product: (typeof products)[0] }) {
   return (
-    <div className="group rounded-2xl bg-[#141414] border border-[#262626] overflow-hidden hover:border-violet-500/30 transition-all cursor-pointer">
+    <Link to={`/product/${product.id}`} className="group rounded-2xl bg-[#141414] border border-[#262626] overflow-hidden hover:border-violet-500/30 transition-all cursor-pointer block">
       {/* Превью */}
       <div className={`h-32 bg-gradient-to-br ${product.color} bg-[#1a1a1a] flex items-center justify-center relative`}>
         <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#0f0f0f]/60 border border-[#262626]">
@@ -318,6 +319,6 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
           </Button>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
