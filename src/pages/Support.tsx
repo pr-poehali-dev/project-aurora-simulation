@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Header } from "@/components/Header"
+import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
 
@@ -42,8 +43,12 @@ export default function Support() {
     <main className="min-h-screen bg-[#0a0a0a]">
       <Header />
 
+      <div className="max-w-4xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumbs items={[{ label: "Поддержка" }]} />
+      </div>
+
       {/* Hero */}
-      <section className="max-w-3xl mx-auto px-4 md:px-8 pt-14 pb-10 text-center">
+      <section className="max-w-3xl mx-auto px-4 md:px-8 pt-8 pb-10 text-center">
         <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-violet-500/10 border border-violet-500/20 mx-auto mb-5">
           <Icon name="HeadphonesIcon" size={28} className="text-violet-400" fallback="Headphones" />
         </div>

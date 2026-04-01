@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Header } from "@/components/Header"
+import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Icon from "@/components/ui/icon"
@@ -124,6 +125,7 @@ export default function Profile() {
       <Header />
 
       <div className="max-w-5xl mx-auto px-4 md:px-8 py-8">
+        <Breadcrumbs items={[{ label: "Личный кабинет" }]} />
         {/* Шапка профиля */}
         <div className="rounded-2xl bg-[#141414] border border-[#262626] p-6 mb-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">

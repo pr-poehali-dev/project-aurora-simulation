@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { Header } from "@/components/Header"
+import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
 
@@ -32,8 +33,12 @@ export default function Sellers() {
     <main className="min-h-screen bg-[#0a0a0a]">
       <Header />
 
+      <div className="max-w-5xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumbs items={[{ label: "Продавцам" }]} />
+      </div>
+
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-4 md:px-8 pt-14 pb-12 text-center">
+      <section className="max-w-5xl mx-auto px-4 md:px-8 pt-8 pb-12 text-center">
         <div className="inline-flex items-center gap-2 rounded-full bg-[#1a1a1a] py-1.5 px-3 text-xs mb-6">
           <span className="rounded-full bg-violet-500/20 px-2 py-0.5 font-medium text-violet-400">ПРОДАВЦАМ</span>
           <span className="text-gray-400">Зарабатывайте на игровых товарах</span>

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Header } from "@/components/Header"
+import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Icon from "@/components/ui/icon"
@@ -176,6 +177,7 @@ export default function Catalog() {
       <Header />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
+        <Breadcrumbs items={[{ label: "Каталог" }]} />
         {/* Заголовок */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-white mb-2">Каталог товаров</h1>

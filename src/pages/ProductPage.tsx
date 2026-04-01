@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import { Header } from "@/components/Header"
+import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Icon from "@/components/ui/icon"
@@ -130,14 +131,10 @@ export default function ProductPage() {
       <Header />
 
       <div className="max-w-5xl mx-auto px-4 md:px-8 py-8">
-        {/* Хлебные крошки */}
-        <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-          <Link to="/" className="hover:text-gray-300 transition-colors">Главная</Link>
-          <Icon name="ChevronRight" size={14} />
-          <Link to="/catalog" className="hover:text-gray-300 transition-colors">Каталог</Link>
-          <Icon name="ChevronRight" size={14} />
-          <span className="text-gray-300 truncate">{product.title}</span>
-        </div>
+        <Breadcrumbs items={[
+          { label: "Каталог", href: "/catalog" },
+          { label: product.title },
+        ]} />
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
           {/* Левая колонка */}

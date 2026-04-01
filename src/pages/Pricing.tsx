@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { Header } from "@/components/Header"
+import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
 
@@ -82,8 +83,12 @@ export default function Pricing() {
     <main className="min-h-screen bg-[#0a0a0a]">
       <Header />
 
+      <div className="max-w-4xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumbs items={[{ label: "Тарифы" }]} />
+      </div>
+
       {/* Hero */}
-      <section className="max-w-4xl mx-auto px-4 md:px-8 pt-14 pb-10 text-center">
+      <section className="max-w-4xl mx-auto px-4 md:px-8 pt-8 pb-10 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Простые тарифы</h1>
         <p className="text-gray-400 max-w-lg mx-auto">
           Начните бесплатно и переходите на следующий уровень по мере роста продаж
