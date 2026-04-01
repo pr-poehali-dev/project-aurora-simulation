@@ -17,18 +17,18 @@ export function Header() {
         <Link to="/catalog" className="text-sm text-gray-300 hover:text-white transition-colors">
           Каталог
         </Link>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
+        <Link to="/catalog" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
           Категории <ChevronDown className="h-4 w-4" />
-        </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+        </Link>
+        <Link to="/sellers" className="text-sm text-gray-300 hover:text-white transition-colors">
           Продавцам
-        </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+        </Link>
+        <Link to="/pricing" className="text-sm text-gray-300 hover:text-white transition-colors">
           Тарифы
-        </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+        </Link>
+        <Link to="/support" className="text-sm text-gray-300 hover:text-white transition-colors">
           Поддержка
-        </a>
+        </Link>
       </nav>
 
       <div className="flex items-center gap-3">
