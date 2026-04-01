@@ -31,12 +31,16 @@ export function Header() {
         </a>
       </nav>
 
-      <Button
-        variant="outline"
-        className="rounded-full border-violet-500 text-violet-400 hover:bg-violet-500/10 hover:text-violet-300 bg-transparent"
-      >
-        Войти / Регистрация
-      </Button>
+      <div className="flex items-center gap-3">
+        <Link to="/profile">
+          <Button
+            variant="outline"
+            className="rounded-full border-violet-500 text-violet-400 hover:bg-violet-500/10 hover:text-violet-300 bg-transparent"
+          >
+            Войти / Регистрация
+          </Button>
+        </Link>
+      </div>
     </header>
   )
 }
