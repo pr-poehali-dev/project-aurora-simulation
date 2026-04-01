@@ -11,8 +11,8 @@ export default function Index() {
       <PartnersSection />
       <FeaturesSection />
       <footer className="py-8 text-center text-sm text-gray-400">
-        От безопасных платежей до синхронизации счетов —{" "}
-        <span className="font-medium text-white">всё работает в одном месте.</span>
+        От редких скинов до игровой валюты —{" "}
+        <span className="font-medium text-white">все цифровые товары на одной платформе.</span>
       </footer>
     </main>
   )
